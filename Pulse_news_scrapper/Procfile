@@ -1,1 +1,1 @@
-
+web: gunicorn pulse_news:app
