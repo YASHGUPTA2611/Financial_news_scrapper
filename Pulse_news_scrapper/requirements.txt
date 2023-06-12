@@ -1,0 +1,7 @@
+pandas
+lxml
+schedule
+gspread
+beautifulsoup4
+requests
+flask
