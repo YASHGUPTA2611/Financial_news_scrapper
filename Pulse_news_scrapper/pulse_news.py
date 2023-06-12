@@ -8,7 +8,7 @@ import pandas as pd
 from datetime import date
 from bs4 import BeautifulSoup
 import time
-key = '195zvdsCxHeStpGnb3zlSaPEDaRBLh9phhJ0jTNfROT0'
+key = 'Enter Your API Key'
 app = Flask(__name__)
 
 @app.route('/')
@@ -62,7 +62,7 @@ def news_scraping_automated():
     df['description'] = description_all
     df['date_time'] = date_time_all
     
-    gc = gspread.service_account(filename='D:\\Automated projects\\news-data-api-d22f2d663df8.json')
+    gc = gspread.service_account(filename='Enter Path of your JSON File')
     sheet = gc.open_by_key(key)
     current_date = date.today()
     worksheet = sheet.add_worksheet(title=str(current_date), rows="1000", cols="3")
