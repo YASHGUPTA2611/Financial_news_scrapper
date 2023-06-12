@@ -1,7 +1,10 @@
 pandas
-lxml
 schedule
 gspread
 beautifulsoup4
 requests
-flask
+Flask
+Werkzeug
+MarkupSafe
+Jinja2
+gunicorn
